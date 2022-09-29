@@ -14,17 +14,22 @@ class funk:
         self.c = c
         self.d = d
 
+    # returns the function's value at x
     def h(self, x):
         return self.a*x**3 + self.b * x**2 + self.c * x + self.d
 
-
+    # returns the function's derivative's value at x
     def hd(self, x):
         pol = polynomial.Polynomial([self.d, self.c, self.b, self.a])
-        der = pol.deriv()
-        coefs = der.coef
+        der = pol.deriv() # polynomifunktion derivaatta // the derivative of a polynomial (function)
+        print(pol.integ())
+        coefs = der.coef # ja sen kertoimet // and its coefficients
+        # lasketaan derivaatta funktion arvo kohdassa x
+        # // compute the value of the derivative function at x
         result = 0
-        for p, i in enumerate(coefs):
-            result += i*x**p
+        for p, c in enumerate(coefs):
+            # c*x^p
+            result += c*x**p
         return result
 
     pass
