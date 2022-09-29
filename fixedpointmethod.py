@@ -1,5 +1,5 @@
 
-import math
+#import math
 from random import randint
 
 # alkuarvaukseen luomiseen käytetty luku

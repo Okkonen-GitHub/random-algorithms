@@ -18,7 +18,7 @@ def sel_sort(array: list) -> list:
     return array
 
 
-unsorted_list = [random.randint(-N, N) for i in range(N)]
+unsorted_list = [random.randint(-N, N) for _ in range(N)]
 correct_solution = unsorted_list.copy()
 correct_solution.sort() # lajitellaan luvut sisäänrakennetulla sort() komennolla, jota voidaan verrata itse lajiteltuun listaan
 print("Generated list", unsorted_list)

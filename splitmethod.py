@@ -48,9 +48,11 @@ def solve(f, a: int, b: int) -> int:
 
 x = None
 while x is None:
-    print("Start!")
+    #print("Start!")
     # valitaan tarkistelu väli [a, b] osittain satunnaisesti niin monta kertaa kuin on pakko
     a, b = randint(-N, N), randint(-N, N)
     x=solve(f, a, b)
 
 print(x)
+#   > python splitmethod.py
+#   > 0.9722855963777874
