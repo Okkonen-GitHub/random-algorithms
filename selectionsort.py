@@ -1,4 +1,4 @@
-import random, math
+import random
 
 # listan pituus ja listan alkioden arvot ovat satunnaislukuja väliltä [-N, N]
 N = 12
